@@ -5,6 +5,7 @@ const app = express();
 
 const publisherRouter = require("./app/routers/nhaxuatban.route");
 const readerRouter = require("./app/routers/docgia.route");
+const staffRouter = require("./app/routers/nhanvien.route");
 
 app.use(cors());
 app.use(express.json());
@@ -13,6 +14,7 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Borrow Book Application" });
 });
 
+app.use("/api/staff", staffRouter);
 app.use("/api/publisher", publisherRouter);
 app.use("/api/reader", readerRouter);
 
