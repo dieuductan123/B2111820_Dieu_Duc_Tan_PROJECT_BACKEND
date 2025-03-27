@@ -4,10 +4,19 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dieuductan123/B2111820_Dieu_Duc_Tan_PROJECT_BACKEND.git"
   },
   "author": "Dieu Duc Tan",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dieuductan123/B2111820_Dieu_Duc_Tan_PROJECT_BACKEND/issues"
+  },
+  "homepage": "https://github.com/dieuductan123/B2111820_Dieu_Duc_Tan_PROJECT_BACKEND#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2"
@@ -15,6 +24,7 @@
   "devDependencies": {
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
+    "nodemon": "^3.1.9",
     "prettier": "^3.5.3"
   }
 }
