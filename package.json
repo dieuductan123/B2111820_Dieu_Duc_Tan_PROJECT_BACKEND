@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/dieuductan123/B2111820_Dieu_Duc_Tan_PROJECT_BACKEND#readme",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "module-alias": "^2.2.3",
+    "mongodb": "^6.15.0",
+    "multer": "^1.4.5-lts.2"
   },
   "devDependencies": {
     "eslint": "^9.23.0",
