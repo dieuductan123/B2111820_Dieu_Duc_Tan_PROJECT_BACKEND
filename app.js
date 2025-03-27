@@ -6,6 +6,7 @@ const app = express();
 const publisherRouter = require("./app/routers/nhaxuatban.route");
 const readerRouter = require("./app/routers/docgia.route");
 const staffRouter = require("./app/routers/nhanvien.route");
+const bookRouter = require("./app/routers/sach.route");
 
 app.use(cors());
 app.use(express.json());
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/staff", staffRouter);
+app.use("/api/book", bookRouter);
 app.use("/api/publisher", publisherRouter);
 app.use("/api/reader", readerRouter);
 
